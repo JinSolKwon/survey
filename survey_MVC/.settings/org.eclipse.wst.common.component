@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="survey_MVC">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="ojdbc6-11.2.0.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ojdbc6-11.2.0.3/ojdbc6-11.2.0.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-dbcp.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/tomcat-dbcp/tomcat-dbcp">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="survey_MVC"/>
+        <property name="java-output-path" value="/survey_MVC/build/classes"/>
+    </wb-module>
+</project-modules>

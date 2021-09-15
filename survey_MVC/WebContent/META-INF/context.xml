@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Context>	// DBCP를 사용하기 위해서는 context.xml에 사용할 데이터베이스의 정보들을 설정해주고 사용하여야 함
+	<Resource
+		name="jdbc/TestDB"
+		auth="Container"
+		type="javax.sql.DataSource"  
+		
+		maxTotal="100"		   
+		maxIdle="30"
+		maxWaitMillis="10000"  
+		
+		username="survey"
+		password="1234"
+		driverClassName="oracle.jdbc.OracleDriver"
+		url="jdbc:oracle:thin:@Localhost:1521:xe"
+	/>
+</Context>
